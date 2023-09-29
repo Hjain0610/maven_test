@@ -1,3 +1,4 @@
+//it is a docker cicd for this project
 pipeline
 {
     agent { label 'master' }
