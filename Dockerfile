@@ -1,5 +1,6 @@
 FROM centos:7 as builder
 LABEL maintainer="HJ"
+WORKDIR /app/source
 ADD . /app/source
 RUN ./mvnw clean package
 
