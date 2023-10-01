@@ -1,6 +1,6 @@
 FROM centos:7 as builder
 LABEL maintainer="HJ"
-RUN mvnw clean package
+RUN ./mvnw clean package
 
 
 FROM builder
