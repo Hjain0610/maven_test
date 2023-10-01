@@ -1,4 +1,4 @@
-FROM centos:7 as builder
+FROM openjdk:8-jdk-alpine as builder
 LABEL maintainer="HJ"
 WORKDIR /app/source
 ADD . /app/source
