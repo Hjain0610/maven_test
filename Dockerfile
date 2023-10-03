@@ -7,7 +7,7 @@ RUN mvn clean package
 
 
 FROM builder
-COPY --from=builder ./webapp/target/webapp.war /usr/local/tomcat/webapps/
+COPY --from=builder ./webapp/target/webapp.war /app/source
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
 
