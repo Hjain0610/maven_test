@@ -3,6 +3,7 @@ LABEL maintainer="HJ"
 WORKDIR /app/source
 RUN yum install -y maven
 COPY . /app/source
+RUN mvn clean package
 
 
 FROM builder
