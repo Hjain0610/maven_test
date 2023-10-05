@@ -1,7 +1,6 @@
 FROM maven:3-jdk-8 as builder
-RUN mkdir -p /app/source
-COPY . /app/source
 WORKDIR /app/source
+COPY . /app/source
 RUN mvn clean package
 
 FROM tomcat:latest
